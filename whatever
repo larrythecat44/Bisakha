@@ -1,0 +1,38 @@
+import streamlit as st
+
+st.set_page_config(page_title="Bisakha's Portfolio", page_icon="🌟")
+
+st.title("🌟 Bisakha Priyadarshini Nanda")
+st.subheader("Student | Blender Learner | Aspiring Programmer")
+
+st.header("About Me")
+st.write("""
+Hi! I'm Bisakha. I am interested in programming, 3D modeling with Blender,
+competitive programming, and learning new technologies.
+""")
+
+st.header("Projects")
+
+projects = [
+    ("Blender Donut Project", "Created a realistic donut and cup in Blender."),
+    ("Python Learning Journey", "Learning Python and problem solving."),
+    ("Portfolio Website", "Built a personal portfolio using Streamlit.")
+]
+
+for title, desc in projects:
+    st.markdown(f"### {title}")
+    st.write(desc)
+
+st.header("Achievements")
+st.write("""
+- MUN Participation
+- Academic Achievements
+- Certifications
+""")
+
+st.header("Contact")
+st.write("📧 Email: your-email@example.com")
+st.write("💻 GitHub: github.com/yourusername")
+st.write("🔗 LinkedIn: linkedin.com/in/yourusername")
+
+st.success("Thanks for visiting my portfolio!")
