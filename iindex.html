@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motu.exe</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg,#ffcc00,#ff6600);
+    text-align:center;
+    margin:0;
+    color:#222;
+}
+
+header{
+    padding:50px;
+}
+
+h1{
+    font-size:4rem;
+}
+
+.card{
+    background:white;
+    margin:20px auto;
+    padding:20px;
+    width:80%;
+    max-width:700px;
+    border-radius:20px;
+    box-shadow:0 0 15px rgba(0,0,0,0.2);
+}
+
+button{
+    padding:15px 30px;
+    font-size:1.2rem;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+#meme{
+    margin-top:20px;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐐 MOTU.EXE 🐐</h1>
+    <p>The strongest lifeform ever discovered.</p>
+</header>
+
+<div class="card">
+    <h2>About Motu</h2>
+    <p>
+        Scientists estimate that Motu's IQ fluctuates between
+        7 and 7000 depending on the amount of samosas consumed.
+    </p>
+</div>
+
+<div class="card">
+    <h2>Verified Achievements</h2>
+    <ul style="text-align:left;">
+        <li>✔ Ate 17 samosas in 3 minutes.</li>
+        <li>✔ Invented gravity by falling off a chair.</li>
+        <li>✔ Won an argument against a wall.</li>
+        <li>✔ Survived on vibes alone.</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>Brainrot Generator</h2>
+
+    <button onclick="brainrot()">
+        Activate Motu Energy
+    </button>
+
+    <p id="meme"></p>
+</div>
+
+<script>
+function brainrot(){
+    const lines = [
+        "Motu unlocked Ultra Samosa Instinct.",
+        "Warning: Motu's aura is expanding.",
+        "Skibidi samosa sigma detected.",
+        "Motu just challenged physics.",
+        "Gigachad levels exceeded.",
+        "Brain cells have left the chat.",
+        "Motu's power level is over 9000 samosas."
+    ];
+
+    document.getElementById("meme").innerText =
+        lines[Math.floor(Math.random()*lines.length)];
+}
+</script>
+
+</body>
+</html>
